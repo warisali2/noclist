@@ -9,6 +9,7 @@ begin
   raise 'ENV["BADSEC_HOST"] not set' if host.nil?
 
   c = Client.new(host)
+
   users = c.users
   puts users.to_json
 

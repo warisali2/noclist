@@ -9,6 +9,11 @@ describe Client do
 
   it 'gets auth from host' do
     @client.auth
-    assert_not @client.auth_token.nil?
+    refute @client.auth_token.nil?
+  end
+
+  it 'gets users from host' do
+    users = @client.users
+    assert users.is_a? Array
   end
 end
