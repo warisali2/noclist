@@ -1,0 +1,2 @@
+bundle install
+BADSEC_HOST=http://0.0.0.0:8888 bundle exec ruby run
